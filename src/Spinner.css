@@ -1,0 +1,50 @@
+.container, .spinner {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner {
+  width: 150px;
+  height: 155px;
+  border-radius: 50%;
+  border-top: 10px solid limegreen;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: rotate(45deg);
+  animation: spin 1.4s linear infinite;
+}
+.spinner2 {
+  width: 120px;
+  height: 130px;
+  border-radius: 50%;
+  border-top: 8px solid lightseagreen;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  transform: rotate(-90deg);
+  animation: spinReverse .7s linear infinite;
+}
+@keyframes spin {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(765deg);
+    opacity: 1;
+  }
+}
+@keyframes spinReverse {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-810deg);
+    opacity: 1;
+  }
+}
